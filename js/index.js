@@ -39,9 +39,9 @@ const fileChange = () => {
 		const dom1 = document.getElementById("fullscreen")
 		const dom2 = document.getElementById("fullscreenWithoutText")
 		const dom3 = document.getElementById("images")
-		dom1.setHTML('')
-		dom2.setHTML('')
-		dom3.setHTML('')
+		dom1.innerHTML = ''
+		dom2.innerHTML = ''
+		dom3.innerHTML = ''
 		const descendantsList = psd.tree().descendants()
 		dom1.appendChild(complieGroup(psd.tree()))
 		dom2.appendChild(complieGroup(psd.tree(), true))
