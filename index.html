@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>自动切图</title>
+</head>
+<script src="js/psd-standalone.js"></script>
+<script src="js/FileSaver.min.js"></script>
+<script src="js/jszip.js"></script>
+<script src="js/index.js"></script>
+<body>
+	<input id="upload" type="file" accept=".psd" onchange="fileChange()">
+    <button onclick="download()">全部下载</button>
+	<div style="margin-top: 10px; padding: 10px; border: 1px solid #000;">
+        全屏切图：
+        <div id="fullscreen"></div>
+        去除文本图层全屏切图：
+        <div id="fullscreenWithoutText"></div>
+        各图层切图：
+        <div id="images"></div>
+    </div>
+</body>
+</html>
